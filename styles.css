@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
-@import url('https://fonts.cdnfonts.com/css/cascadia-code');
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -14,27 +15,84 @@
   box-sizing: border-box;
 }
 
-
-body {
-  font-family: 'Cascadia Code', sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-size: 30px;
-  margin-left: 2rem;
-
-  background: #654ea3; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #654ea3, #eaafc8);
-  background: linear-gradient(to bottom, #654ea3, #eaafc8) no-repeat;
-  min-height: 100vh;
-  color: #AAACB0;
-
+html {
+  scroll-behavior: smooth;
 }
 
-h1, p {
-  animation: fadeIn 2s ease-in;
+
+
+body {
+  /*font settings */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+
+  color: #AAACB0;
+  background: #654ea3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #654ea3, #eaafc8);
+  background: linear-gradient(to bottom, #0F2027, #203A43, #2C5364) no-repeat;
+  min-height: 100vh;
+
+  margin: 0;
+
+
 }
 
 h1 {
+  font-weight: 300;
   padding-top: 6rem;
+  font-size: 10vh;
 }
 
+section {
+  padding: 100px 20px;
+  height: 100vh;
+  /* Cada sección ocupa la altura total de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.subtitle {
+  padding: 0;
+  font-size: 4vh;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.text-entry{
+  justify-content: left;
+  font-size: 3vh;
+}
+
+
+#content {
+  animation: fadeIn 2.2s ease-in;
+  margin-left: 2rem;
+
+}
+
+#navbar {
+  position: sticky;
+  overflow: hidden;
+  background-color: #0F2027;
+  top: 0;
+}
+
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #AAACB0;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 3vh;
+
+}
+
+#navbar a.active {
+  border-bottom: 3px solid #305b6d;
+}
