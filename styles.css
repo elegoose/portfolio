@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 a {
@@ -29,28 +30,23 @@ body {
   background: #654ea3;
   background: -webkit-linear-gradient(to bottom, #654ea3, #eaafc8);
   background: linear-gradient(to bottom, #0F2027, #203A43, #2C5364) no-repeat;
-  min-height: 100vh;
   margin: 0;
 }
 
 h1 {
   font-weight: 300;
-  padding-top: 6rem;
   font-size: 10vh;
 }
 
 section {
-  padding: 100px 20px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-  margin-top: 20px;
 }
 
 .subtitle {
-  padding: 0;
   font-size: 4vh;
   font-weight: 300;
   font-style: italic;
@@ -91,5 +87,4 @@ section {
 #navbar a:hover {
   border-bottom: 3px solid #AAACB0;
   transition: 0.1s;
-
 }
